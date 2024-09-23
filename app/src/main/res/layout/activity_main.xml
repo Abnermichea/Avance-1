@@ -5,59 +5,99 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9F5F8ABA"
     tools:context=".MainActivity">
 
-
     <TextView
-        android:id="@+id/txtBienvenido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="Bienvenido"
-        android:shadowColor="@color/cardview_dark_background"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="125dp"
+        android:background="#FFC855"
+        android:text="@string/Bienvenido"
         android:textAlignment="center"
-        android:textSize="24sp"
-        android:textAppearance="@color/black"
+        android:textColor="#1A2775"
+        android:textSize="50sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/btnSalir"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="80dp"
-        android:padding="15dp"
-        android:text="Salir"
-        android:textAlignment="center"
-        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="621dp" />
-
-    <Button
-        android:id="@+id/btnMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="80dp"
-        android:padding="15dp"
-        android:text="Menú"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="552dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <ImageView
-        android:id="@+id/imgMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="TODO"
-        app:srcCompat="@drawable/dog"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="68dp" />
+        android:id="@+id/imageView"
+        android:layout_width="221dp"
+        android:layout_height="228dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="84dp"
+        android:padding="25dp"
+        android:src="@drawable/ingresos"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="96dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="148dp"
+        android:gravity="center"
+        android:text="@string/ingresos"
+        android:textAlignment="center"
+        android:textColor="#1A2775"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="115dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="144dp"
+        android:gravity="center"
+        android:text="@string/gastoMensual"
+        android:textAlignment="center"
+        android:textColor="#1A2775"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="249dp"
+        android:layout_height="211dp"
+        android:layout_marginBottom="80dp"
+        android:padding="25dp"
+        android:src="@drawable/inngresos"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="237dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#FFC748"
+        android:text="Comencemos"
+        android:textAlignment="center"
+        android:textColor="#242777"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

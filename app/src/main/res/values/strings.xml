@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Gestor de Gastos</string>
+    <string name="Bienvenido">GastosSmart</string>
+    <string name="inicio">Bienvenido</string>
+    <string name="gastoMensual">Gastos Mensuales</string>
+    <string name="gastoSemanal">Gastos Semanales</string>
+    <string name="ingresos">Ingresos</string>
+    <string name="grafico">Informe</string>
+
 </resources>

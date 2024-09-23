@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9F5F8ABA"
+    tools:context=".paginaPrincipal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="47dp"
+        android:background="#FFC855"
+        android:gravity="center"
+        android:text="@string/inicio"
+        android:textAlignment="center"
+        android:textColor="#242777"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/editTextText"
+        android:layout_width="338dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="24dp"
+        android:background="#E6E1E1"
+        android:inputType="text"
+        android:text="Nombre"
+        android:textColor="#ADA9A9"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill,HardcodedText,LabelFor,MissingConstraints" />
+
+    <AutoCompleteTextView
+        android:id="@+id/editText"
+        android:layout_width="338dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="28dp"
+        android:background="#E6E1E1"
+        android:inputType="text"
+        android:text="Apellido"
+        android:textColor="#ADA9A9"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/autoCompleteTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill,HardcodedText,LabelFor,MissingConstraints" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="338dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="181dp"
+        android:background="#E6E1E1"
+        android:text="Sueldo"
+        android:textColor="#ADA9A9"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="155dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="188dp"
+        android:text="Entrar"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:backgroundTint="#FFC748"
+        android:textColor="#242777"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="155dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="188dp"
+        android:text="Salir"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:backgroundTint="#FEC63B"
+        android:textColor="#242777"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextView"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

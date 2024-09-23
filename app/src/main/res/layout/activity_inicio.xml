@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9F5F8ABA"
+    tools:context=".Inicio">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="#FFC855"
+        android:gravity="center"
+        android:text="@string/grafico"
+        android:textAlignment="center"
+        android:textColor="#242777"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,UnknownIdInLayout"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grafico de barras"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="76dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:text="Graficos"
+            android:textSize="12dp"
+            tools:ignore="ButtonStyle,HardcodedText,SpUsage" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="71dp"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="30dp"
+            tools:ignore="ButtonStyle,HardcodedText,SpUsage" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="72dp"
+            android:layout_height="68dp"
+            android:layout_weight="1"
+            android:text="Registros"
+            android:textSize="12dp"
+            tools:ignore="ButtonStyle,HardcodedText,SpUsage" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
